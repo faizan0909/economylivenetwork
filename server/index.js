@@ -49,15 +49,12 @@ if (fs.existsSync(clientDistPath)) {
   });
 }
 
-if (!process.env.VERCEL) {
-  app.listen(PORT, () => {
-    console.log(`===============================================`);
-    console.log(`ECONOMYLIVE NETWORK Backend Server running!`);
-    console.log(`Port: http://localhost:${PORT}`);
-    console.log(`API Health: http://localhost:${PORT}/api/health`);
-    console.log(`Admin credentials: admin@economylivenetwork.com / admin123`);
-    console.log(`===============================================`);
-  });
-}
+app.listen(PORT, () => {
+  console.log(`===============================================`);
+  console.log(`ECONOMYLIVE NETWORK Backend Server running on port ${PORT}!`);
+  console.log(`API Health: http://localhost:${PORT}/api/health`);
+  console.log(`Admin credentials: admin@economylivenetwork.com / admin123`);
+  console.log(`===============================================`);
+});
 
 export default app;
