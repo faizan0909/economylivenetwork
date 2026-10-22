@@ -1,0 +1,31 @@
+{
+  "name": "economylive-network",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Fullstack digital news portal for EconomyLive Network with Google News ingestion and Admin CMS",
+  "scripts": {
+    "start": "node server/index.js",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm run dev",
+    "build": "cd client && npm install && npm run build",
+    "install:all": "cd server && npm install && cd ../client && npm install"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "rss-parser": "^3.13.0"
+  },
+  "keywords": [
+    "news",
+    "economylive-network",
+    "google-news",
+    "cms",
+    "admin-panel",
+    "react",
+    "express"
+  ]
+}

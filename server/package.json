@@ -1,0 +1,20 @@
+{
+  "name": "economylive-server",
+  "version": "1.0.0",
+  "description": "Backend API for EconomyLive Network with Google News aggregation and admin panel",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "rss-parser": "^3.13.0"
+  }
+}
